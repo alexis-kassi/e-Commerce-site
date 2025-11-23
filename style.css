@@ -1,0 +1,180 @@
+/*LES ELEMENTS DU SITE*/
+* {
+    font-family: verdana;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Stylisation partie header du site*/
+.classe_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 5px 5px 3px rgba(0, 0, 0.2, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+/*LOGO*/
+.logo_du_site span {
+    border: 2px solid red;
+    height: 5px;
+    width: 120px;
+    background-color: red;
+    color: red;
+    border-radius: 50px;
+}
+
+.logo_du_site {
+    color: black;
+    padding: 15px 70px;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/*MENU DE NAVIGATION*/
+.menu_de_navigation {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+ul li a {
+    color: gray;
+    margin: 55px;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/*TRANSITION MENU*/
+
+ul li a:hover {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.bouton_de_connexion {
+    padding: 7px 50px;
+    position: relative;
+    left: -70px;
+    border-radius: 60px;
+    background-color: red;
+    border: 0;
+    color: white;
+    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0.2, 0.1);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+.bouton_de_inscription {
+    padding: 7px 50px;
+    position: relative;
+    left: -70px;
+    border-radius: 60px;
+    background-color: black;
+    border: 0;
+    color: white;
+    box-shadow: 2px 10px 10px 3px rgba(0, 0, 0.2, 0.1);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bouton_de_inscription i {
+    margin-left: 10px;
+}
+
+.bouton_de_connexion:hover {
+    background-color: rgba(255, 0, 0, 0.589);
+}
+
+/*image d'accueil*/
+.image_accueil {
+    border: 0px solid black;
+    width: 90%;
+    height: 470px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/mont10.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: animation_image_accueil infinite 20s;
+}
+
+@keyframes animation_image_accueil {
+    00% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/mont10.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    50% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/chauss4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    70% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/vet13.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    100% {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/mont10.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/*TEXTE D'ACCUEIL*/
+.texte_accueil {
+    margin-left: 30px;
+}
+
+.texte_accueil h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    top: 55px;
+}
+
+.texte_accueil p {
+    color: gray;
+    position: relative;
+    top: 65px;
+}
+
+.bouton_explore {
+    padding: 6px 70px;
+    border: 0;
+    background-color: white;
+    margin-top: 90px;
+}
+
+.bouton_explore a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*ICONES*/
+.dossier_icones {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.dossier_icones i {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 10px;
+}
