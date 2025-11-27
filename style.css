@@ -1,180 +1,157 @@
-/*LES ELEMENTS DU SITE*/
+/*Les éléments du site*/
 * {
-    font-family: verdana;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: segoe UI;
+    margin: 0 auto;
 }
 
-/*Stylisation partie header du site*/
+/*Couleur de la page*/
+body {
+   background-color: rgba(128, 128, 128, 0.247);
+}
+
+/*Disposition en tête du site*/
+.entete {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: black;
+}
+
+.entete li {
+    color: white;
+    font-size: 10px;
+}
+
+/*logo du site*/
+.logo_site_ecommerce {
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/*header*/
+header {
+    height: 80vh;
+    background: linear-gradient(rgb(4, 24, 37), rgb(5, 30, 46));
+}
 .classe_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 2px 5px 5px 3px rgba(0, 0, 0.2, 0.1);
-    position: sticky;
-    top: 0;
 }
 
-/*LOGO*/
-.logo_du_site span {
-    border: 2px solid red;
-    height: 5px;
-    width: 120px;
-    background-color: red;
-    color: red;
-    border-radius: 50px;
-}
-
-.logo_du_site {
-    color: black;
-    padding: 15px 70px;
-    font-size: 22px;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-/*MENU DE NAVIGATION*/
-.menu_de_navigation {
+/*MENU*/
+.menu_site {
     display: flex;
     align-items: center;
     list-style: none;
 }
 
+
 ul li a {
-    color: gray;
-    margin: 55px;
+    margin: 30px;
+    color: white;
     text-decoration: none;
+    position: relative;
+    top: 7px;
+    left: -60px;
     transition: 0.5s;
     cursor: pointer;
 }
 
-/*TRANSITION MENU*/
-
+/*TRANSITION MENU SITE*/
 ul li a:hover {
-    font-weight: bold;
-    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: white;
     color: black;
-}
-
-.bouton_de_connexion {
-    padding: 7px 50px;
-    position: relative;
-    left: -70px;
-    border-radius: 60px;
-    background-color: red;
-    border: 0;
-    color: white;
-    box-shadow: 2px 4px 4px 3px rgba(0, 0, 0.2, 0.1);
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-
-.bouton_de_inscription {
-    padding: 7px 50px;
-    position: relative;
-    left: -70px;
-    border-radius: 60px;
-    background-color: black;
-    border: 0;
-    color: white;
-    box-shadow: 2px 10px 10px 3px rgba(0, 0, 0.2, 0.1);
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.bouton_de_inscription i {
-    margin-left: 10px;
-}
-
-.bouton_de_connexion:hover {
-    background-color: rgba(255, 0, 0, 0.589);
-}
-
-/*image d'accueil*/
-.image_accueil {
-    border: 0px solid black;
-    width: 90%;
-    height: 470px;
+    font-weight: bolder;
     border-radius: 5px;
-    margin-left: 70px;
-    margin-top: 18px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/mont10.jpg);
+}
+
+/*ICONES SITE*/
+.icones_header {
+    margin-top: 15px;
+}
+
+.icones_header i {
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icones_header i:hover {
+transform: scale(1.2);
+}
+
+/*image page accueil*/
+.image_page_accueil {
+    border: 0 solid white;
+    height: 410px;
+    width: 85%;
+    position: relative;
+    top: 20px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(4, 21, 34, 0.6)), url(IMAGESsite/mont10.jpg);
     background-position: center;
+    border-radius: 10px;
+    left: -5px;
     background-size: cover;
-    animation: animation_image_accueil infinite 20s;
+    animation: animation_image_accueil infinite;
+    animation-duration: 15s;
 }
 
+/*animation image d'accueil*/
 @keyframes animation_image_accueil {
-    00% {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/mont10.jpg);
+    from {
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(4, 21, 34, 0.6)), url(IMAGESsite/chauss4.jpg);   
+        background-size: cover;  
         background-position: center;
-        background-size: cover;
-    }
-
-    50% {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/chauss4.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    70% {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/vet13.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    100% {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), black), url(IMAGESsite/mont10.jpg);
-        background-position: center;
-        background-size: cover;
     }
 }
 
-/*TEXTE D'ACCUEIL*/
-.texte_accueil {
-    margin-left: 30px;
+.image_page_accueil p {
+    color: white;
+    position: relative;
+    top: 70px;
+    font-style: italic;
+    left: 25px;
 }
 
-.texte_accueil h1 {
+.image_page_accueil h1 {
     color: white;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 60px;
+    font-style: italic;
     position: relative;
-    top: 55px;
+    top: 80px;
+    left: 20px;
 }
 
-.texte_accueil p {
-    color: gray;
-    position: relative;
-    top: 65px;
-}
-
-.bouton_explore {
-    padding: 6px 70px;
+.btn_explore {
+    padding: 7px 60px;
     border: 0;
-    background-color: white;
-    margin-top: 90px;
-}
-
-.bouton_explore a {
-    color: black;
-    text-decoration: none;
+    border-radius: 10px;
     font-weight: bold;
+    background-color: white;
+    margin-top: 130px;
+    margin-left: 20px;
 }
 
-/*ICONES*/
-.dossier_icones {
-    margin-top: 20px;
-    font-size: 30px;
+/* dispostion des produits*/
+.classe_produits {
+    display: flex;
 }
 
-.dossier_icones i {
-    color: white;
-    border: 2px solid white;
-    padding: 10px;
-    width: 50px;
-    border-radius: 50px;
-    margin: 10px;
+.produits {
+
 }
+
+.produits img {
+    height: 150px;
+    object-fit: cover;
+}
+
+/*trasition*/
