@@ -6,7 +6,7 @@
 
 /*Couleur de la page*/
 body {
-   background-color: rgba(128, 128, 128, 0.247);
+    background-color: rgba(128, 128, 128, 0.247);
 }
 
 /*Disposition en tête du site*/
@@ -25,6 +25,8 @@ body {
 /*logo du site*/
 .logo_site_ecommerce {
     font-size: 40px;
+    position: relative;
+    left: -75px;
     color: white;
     font-weight: bolder;
     font-style: italic;
@@ -35,6 +37,7 @@ header {
     height: 80vh;
     background: linear-gradient(rgb(4, 24, 37), rgb(5, 30, 46));
 }
+
 .classe_header {
     display: flex;
     justify-content: space-between;
@@ -55,7 +58,7 @@ ul li a {
     text-decoration: none;
     position: relative;
     top: 7px;
-    left: -60px;
+    left: -30px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -73,6 +76,8 @@ ul li a:hover {
 /*ICONES SITE*/
 .icones_header {
     margin-top: 15px;
+    position: relative;
+    left: 85px;
 }
 
 .icones_header i {
@@ -84,7 +89,7 @@ ul li a:hover {
 }
 
 .icones_header i:hover {
-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /*image page accueil*/
@@ -94,7 +99,7 @@ transform: scale(1.2);
     width: 85%;
     position: relative;
     top: 20px;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(4, 21, 34, 0.6)), url(IMAGESsite/mont10.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(4, 21, 34, 0.6)), url(IMAGESsite/mont10.jpg);
     background-position: center;
     border-radius: 10px;
     left: -5px;
@@ -106,8 +111,8 @@ transform: scale(1.2);
 /*animation image d'accueil*/
 @keyframes animation_image_accueil {
     from {
-        background: linear-gradient(rgba(0,0,0,0.8),rgba(4, 21, 34, 0.6)), url(IMAGESsite/chauss4.jpg);   
-        background-size: cover;  
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(4, 21, 34, 0.6)), url(IMAGESsite/chauss4.jpg);
+        background-size: cover;
         background-position: center;
     }
 }
@@ -143,15 +148,120 @@ transform: scale(1.2);
 /* dispostion des produits*/
 .classe_produits {
     display: flex;
+    margin-top: 100px;
 }
 
 .produits {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: white;
+}
 
+.produits p {
+    font-weight: bold;
 }
 
 .produits img {
     height: 150px;
+    width: 300px;
     object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 /*trasition*/
+.produits img:hover {
+    filter: contrast(1.3);
+}
+
+/*texte produits*/
+.texte_produit {
+    text-align: center;
+    margin-top: 50px;
+    color: darkslategray;
+    font-size: 40px;
+}
+
+/*CLASSE LES PRODUITS*/
+.nos_produits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.les_produit1 {
+    border: 0px solid black;
+    height: 150px;
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(IMAGESsite/mont3.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: animation_image1 infinite 12s;
+}
+
+.container1 {
+    padding: 10px;
+    background-color: white;
+}
+
+@keyframes animation_image1 {
+    from {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(IMAGESsite/mont5.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.les_produit2 {
+    border: 0px solid black;
+    height: 150px;
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(IMAGESsite/vet39.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: animation_image2 infinite 12s;
+}
+
+.container2 {
+    padding: 10px;
+    background-color: white;
+}
+
+@keyframes animation_image2 {
+    from {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(IMAGESsite/vet37.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+.les_produit3 {
+    border: 0px solid black;
+    height: 150px;
+    width: 430px;
+}
+
+.les_produit3 {
+    border: 1px solid black;
+    height: 150px;
+    width: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(IMAGESsite/chauss2.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: animation_image3 infinite 12s;
+}
+
+.container3 {
+    padding: 10px;
+    background-color: white;
+}
+
+@keyframes animation_image3 {
+    from {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(IMAGESsite/chauss3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
