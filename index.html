@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVOXA - site e-commerce</title>
+    <title>Avoxa - site e-commerce</title>
 </head>
 
 <body>
@@ -29,9 +29,9 @@
             </div>
             <ul class="menu_site">
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos/Service</a></li>
+                <li><a href="#service">À propos </a></li>
+                <li><a href="#produits">Produits</a></li>
                 <li><a href="#">Nouveautés</a></li>
-                <li><a href="#">Produits</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
@@ -50,47 +50,163 @@
 
     <!--PREMIERE PARTIE DU SITE MAIN-->
     <main>
-        <div class="classe_produits">
-            <div class="produits">
-                <img src="IMAGESsite/mont2.jpg" alt="montre">
-                <p>Disponible</p>
+        <section class="service" id="service">
+        <div class="classe_service">
+            <div class="service_image">
+                <img src="IMAGESsite/ecomm.jpg" alt="ecommerce">
             </div>
-            <div class="produits">
-                <img src="IMAGESsite/mont11.jpg" alt="montre">
-                <p>Disponible</p>
-            </div>
-            <div class="produits">
-                <img src="IMAGESsite/chauss6.jpg" alt="chaussure">
-                <p>Disponible</p>
-            </div>
-            <div class="produits">
-                <img src="IMAGESsite/chauss5.jpg" alt="chaussure">
-                <p>Disponible</p>
-            </div>
-        </div>
+            <div class="service_texte">
+                <h1>Chic Produits</h1>
+                <p>
+                    Notre boutique en ligne vous offre une expérience d’achat simple, rapide et sécurisée. Nous vous <br>
+                    proposons une large gamme de produits soigneusement sélectionnés, avec un service client disponible <br>
+                    pour vous accompagner à chaque étape. Profitez d’une livraison rapide, de paiements fiables et d’un <br>
+                    suivi complet de vos commandes. Votre satisfaction est notre priorité, et nous mettons tout en œuvre <br>
+                    pour vous offrir un service de qualité du début à la fin..</p>
 
-        <div class="texte_produit">
-            <h1>Avoxa e-commerce production</h1>
+                <button class="en_savoir">En savoir plus</button> <br><br>
+                <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-telegram"></i><i
+                    class="fa-brands fa-tiktok"></i><br><br>
+            </div>
         </div>
-        <section class="nos_produits">
-            <div class="container1">
-                <div class="les_produit1">
-                </div>
-                <p>Disponible</p>
-                <em>250 000F CFA</em>
+        </section>
+
+        <section class="catalogue">
+            <div class="texte_catalogue">
+                <h1>
+                    Parcourez notre catalogue exclusif</h1>
+                <p>Découvrez une sélection soigneusement choisie de produits tendance, pièces rares et collections <br>
+                    luxueuses pour tous vos besoins.</p> <br>
+                    <img src="IMAGESsite/play_store.png" alt="play_store">
+                    <img src="IMAGESsite/app_store.png" alt="app_store">
             </div>
-            <div class="container2">
-                <div class="les_produit2">
-                </div>
-                <p>Disponible</p>
-                <em>250 000F CFA</em>
+            <div class="image_catalogue">
             </div>
-            <div class="container3">
-                <div class="les_produit3">
+
+        </section>
+        <div class="categorie_produit">
+            <h1>Catégorie des produits</h1>
+            <p>Nos produits en ce moment</p>
+        </div>
+        <!--PRODUITS ECOMMERCE-->
+        <!--partie1-->
+        <section class="produits" id="produits">
+            <section class="classe_produits_avoxa">
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/sac1 - Copie.jpg" alt="sac">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
                 </div>
-                <p>Disponible</p>
-                <em>250 000F CFA</em>
-            </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/lun2.jpg" alt="lunette">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/chauss4.jpg" alt="chaussure">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/mont2.jpg" alt="montre">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+            </section>
+
+            <!--partie2-->
+            <section class="avoxa_produit_2">
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/vet103.jpg" alt="vêtement">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/vet47.jpg" alt="vêtement">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/vet52.jpg" alt="vêtement">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/vet87.jpg" alt="vêtement">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+            </section>
+
+            <!--parie 3-->
+            <section class="avoxa_produit_3">
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/sac3.jpg" alt="sac">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/mont11.jpg" alt="montre">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/lun3.jpg" alt="lunette">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+
+                <div class="avoxa_produit">
+                    <img src="IMAGESsite/chauss5.jpg" alt="chaussure">
+                    <p>Produit disponible</p>
+                    <h3>20 000F CFA</h3>
+                    <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                        class="fa fa-star" aria-hidden="true"></i><br><br>
+                    <button class="btn_ajouter">Ajouter au panier</button>
+                </div>
+            </section>
         </section>
     </main>
 </body>
